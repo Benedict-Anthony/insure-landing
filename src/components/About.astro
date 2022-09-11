@@ -1,0 +1,128 @@
+---
+import snappy from "../images/snappy.svg";
+import affordable from "../images/affordable.svg";
+import people from "../images/people.svg";
+---
+
+<main>
+  <section class="container">
+    <div class="line"></div>
+    <h3>We’re different</h3>
+
+    <section class="flex">
+      <article class="card">
+        <img src={snappy} alt="" />
+        <h1>Snappy Process</h1>
+        <p>
+          Our application process can be completed in minutes, not hours. Don’t
+          get stuck filling in tedious forms
+        </p>
+      </article>
+
+      <article class="card">
+        <img src={affordable} alt="" />
+        <h1>Affordable Prices</h1>
+        <p>
+          We don’t want you worrying about high monthly costs. Our prices may be
+          low, but we still offer the best coverage possible.
+        </p>
+      </article>
+
+      <article class="card">
+        <img src={people} alt="" />
+        <h1>People First</h1>
+        <p>
+          Our plans aren’t full of conditions and clauses to prevent payouts. We
+          make sure you’re covered when you need it.
+        </p>
+      </article>
+    </section>
+  </section>
+
+  <section class="more-about">
+    <div class="container flex">
+      <h2>Find out more about how we work</h2>
+      <a href="#" class="btn">How we work</a>
+    </div>
+  </section>
+</main>
+
+<style>
+  :root {
+    --DarkViolet: hsl(256, 26%, 20%);
+    --GrayishBlue: hsl(216, 30%, 68%);
+    /* /- ### Neutral  */
+    --VeryDarkViolet: hsl(270, 9%, 17%);
+    --DarkrayishViolet: hsl(273, 4%, 51%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+  }
+
+  main {
+    margin-top: 90px;
+  }
+
+  main h3 {
+    font-size: 40px;
+    font: 700;
+    padding-bottom: 2rem;
+  }
+
+  main .card {
+    gap: 10px;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  main .card h1 {
+    font-size: 22px;
+    margin: 5px 0;
+  }
+
+  main .card img {
+    width: 5rem;
+  }
+
+  main .more-about {
+    margin-top: 40px;
+    background-color: var(--DarkViolet);
+    padding: 3rem 0;
+    width: 100%;
+  }
+
+  main .more-about h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    width: 50%;
+    line-height: 1em;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      text-align: center;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    main .more-about h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      width: 90%;
+      line-height: 1.4em;
+      padding-bottom: 1em;
+    }
+  }
+</style>

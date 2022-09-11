@@ -1,0 +1,110 @@
+---
+import logo from "../images/logo.svg";
+import facebook from "../images/facebook.svg";
+import twitter from "../images/twitter.svg";
+import instagram from "../images/instagram.svg";
+import pinterest from "../images/pinterest.svg";
+---
+
+<footer>
+  <header class="container flex">
+    <div class="logo">
+      <img src={logo} alt="" />
+    </div>
+
+    <div class="icons">
+      <img src={facebook} alt="" />
+      <img src={twitter} alt="" />
+      <img src={pinterest} alt="" />
+      <img src={instagram} alt="" />
+    </div>
+  </header>
+  <div class="line container"></div>
+  <nav class="flex container">
+    <ul>
+      <h4>Our company</h4>
+      <li><a href="#">How we work</a></li>
+      <li><a href="#">Why Insure?</a></li>
+      <li><a href="#">View plans</a></li>
+      <li><a href="#">Reviews</a></li>
+    </ul>
+
+    <ul>
+      <h4>Help me</h4>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Terms of use</a></li>
+      <li><a href="#">Privacy policy</a></li>
+      <li><a href="#">Cookies</a></li>
+    </ul>
+
+    <ul>
+      <h4>Contact</h4>
+      <li><a href="#">Sales</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">Live chat</a></li>
+    </ul>
+
+    <ul>
+      <h4>Others</h4>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Press</a></li>
+      <li><a href="#">Licenses</a></li>
+    </ul>
+  </nav>
+</footer>
+
+<style>
+  :root {
+    --DarkViolet: hsl(256, 26%, 20%);
+    --GrayishBlue: hsl(216, 30%, 68%);
+    /* /- ### Neutral  */
+    --VeryDarkViolet: hsl(270, 9%, 17%);
+    --DarkrayishViolet: hsl(273, 4%, 51%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+  }
+
+  footer {
+    margin-top: 60px;
+    background-color: var(--VeryLightGray);
+    padding: 2rem 0;
+  }
+
+  footer header .icons img {
+    display: inline;
+    margin: 0 3px;
+  }
+
+  footer nav ul {
+    padding-top: 2rem;
+  }
+
+  footer nav ul h4 {
+    margin-bottom: 1em;
+    font-size: 18px;
+  }
+
+  footer nav ul li {
+    margin: 10px 2px;
+  }
+
+  footer nav ul li a:hover {
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--DarkViolet);
+  }
+
+  footer .line {
+    width: 100%;
+    margin-top: 20px;
+    opacity: 0.7;
+  }
+
+  @media (max-width: 768px) {
+    footer .flex {
+      gap: 20px;
+    }
+
+    footer nav ul li {
+      margin-top: 10px;
+    }
+  }
+</style>
